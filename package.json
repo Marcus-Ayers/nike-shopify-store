@@ -27,7 +27,6 @@
     "@react-three/drei": "^9.74.6",
     "@react-three/fiber": "^8.13.0",
     "@react-three/postprocessing": "^2.11.4",
-    "@triplex/run": "^0.53.0",
     "@types/react": "^18.2.8",
     "@types/three": "^0.152.1",
     "@vercel/og": "^0.5.4",
