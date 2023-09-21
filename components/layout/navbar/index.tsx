@@ -7,6 +7,7 @@ import CartIcon from 'components/icons/cart';
 import { getMenu } from 'lib/shopify';
 import { Menu } from 'lib/shopify/types';
 import Image from 'next/image';
+import { headerLogo } from '../../../public/assets/images';
 import MobileMenu from './mobile-menu';
 import Search from './search';
 import Toggle from './toggle-dark';
@@ -24,9 +25,9 @@ export default async function Navbar() {
           <Link href="/" aria-label="Go back home">
             {/* <LogoIcon className="h-8 transition-transform hover:scale-110" /> */}
             <Image
-              src="/images/alogo.jpeg"
+              src={headerLogo}
               alt="logo"
-              width={50}
+              width={150}
               height={50}
               className="rounded-full transition-transform hover:scale-110"
             ></Image>

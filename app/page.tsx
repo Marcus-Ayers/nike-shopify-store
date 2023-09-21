@@ -1,4 +1,3 @@
-import Nav from '../components/Nav';
 import {
   CustomerReviews,
   Footer,
@@ -32,7 +31,6 @@ export default async function HomePage() {
   return (
     <>
       <main className="relative">
-        <Nav />
         <section className="xl:padding-l wide:padding-r padding-b">
           <Hero />
         </section>
