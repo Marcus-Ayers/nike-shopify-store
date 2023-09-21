@@ -15,7 +15,6 @@ export default function MobileMenu({ menu }: { menu: Menu[] }) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false);
-  console.log(document.documentElement.className);
 
   const [activeClass, setActiveClass] = useState(false);
 
