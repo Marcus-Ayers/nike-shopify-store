@@ -8,7 +8,10 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
     './icons/**/*.{js,ts,jsx,tsx}',
     './app/**/*.{js,ts,jsx,tsx}',
-    './lib/**/*.{js,ts,jsx,tsx,mdx}'
+    './lib/**/*.{js,ts,jsx,tsx,mdx}',
+    './constants/**/*.{js,ts,jsx,tsx,mdx}',
+    './public/**/*.{js,ts,jsx,tsx,mdx}',
+    './sections/**/*.{js,ts,jsx,tsx,mdx}'
   ],
   darkMode: 'class',
   theme: {

@@ -1,3 +1,4 @@
+import Nav from '../components/Nav';
 import {
   CustomerReviews,
   Footer,
@@ -7,8 +8,7 @@ import {
   SpecialOffer,
   Subscribe,
   SuperQuality
-} from './sections';
-import Nav from './components/nav';
+} from '../sections';
 //The metadata object holds information about the page that helps with SEO
 // (Search Engine Optimization) and social sharing. The description is a brief
 // summary of your page that might show up in search engine results. The openGraph
@@ -48,7 +48,7 @@ export default async function HomePage() {
         <section className="padding">
           <SpecialOffer />{' '}
         </section>
-        <section className="bg-pale-blue padding">
+        <section className="padding bg-pale-blue dark:bg-black">
           <CustomerReviews />
         </section>
         <section className="padding-x w-full py-16 sm:py-32">

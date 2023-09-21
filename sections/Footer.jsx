@@ -1,25 +1,25 @@
-import { footerLogo } from "@/public/assets/images";
-import Image from "next/image";
-import { footerLinks, socialMedia } from "../constants";
-import { copyrightSign } from "@/public/assets/icons";
+import { footerLogo } from '../public/assets/images';
+import Image from 'next/image';
+import { footerLinks, socialMedia } from '../constants';
+import { copyrightSign } from '../public/assets/icons';
 
 const Footer = () => {
   return (
     <footer className="max-container">
-      <div className="flex justify-between items-start gap-20 flex-wrap max-lg:flex-col">
+      <div className="flex flex-wrap items-start justify-between gap-20 max-lg:flex-col">
         <div className="flex flex-col items-start">
           <a href="/">
             <Image src={footerLogo} alt="logo" width={150} height={46} />
           </a>
-          <p className="mt-6 text-base leading-7 font-montserrat text-white-400 sm:max-w-sm ">
-            Get shoes ready for the new term at your nearest Nike store. Find
-            your perfect size in store. Get rewards.
+          <p className="mt-6 font-montserrat text-base leading-7 text-white-400 sm:max-w-sm ">
+            Get shoes ready for the new term at your nearest Nike store. Find your perfect size in
+            store. Get rewards.
           </p>
-          <div className="flex items-center gap-5 mt-8">
+          <div className="mt-8 flex items-center gap-5">
             {socialMedia.map((icon) => (
               <div
                 key={icon.alt}
-                className="flex justify-center item-center w-12 h-12 bg-white rounded-full"
+                className="item-center flex h-12 w-12 justify-center rounded-full bg-white"
               >
                 <Image src={icon.src} alt={icon.alt} width={24} height={24} />
               </div>
@@ -27,16 +27,16 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap">
+        <div className="flex flex-1 flex-wrap justify-between gap-20 lg:gap-10">
           {footerLinks.map((section) => (
             <div key={section}>
-              <h4 className="text-white font-montserrat text-2xl leading-normal font-medium mb-6 ">
+              <h4 className="mb-6 font-montserrat text-2xl font-medium leading-normal text-white ">
                 {section.title}
               </h4>
               <ul>
                 {section.links.map((link) => (
                   <li
-                    className="mt-3 text-white-400 font-montserrat text-base leading-normal hover:text-slate-gray cursor-pointer"
+                    className="mt-3 cursor-pointer font-montserrat text-base leading-normal text-white-400 hover:text-slate-gray"
                     key={link.name}
                   >
                     <a>{link.name}</a>
@@ -48,18 +48,18 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex justify-between text-white-400 mt-24 max-sm:flex-col max-sm:items-center">
-        <div className="flex flex-1 justify-start items-center gap-2 font-montserrat cursor-pointer">
+      <div className="mt-24 flex justify-between text-white-400 max-sm:flex-col max-sm:items-center">
+        <div className="flex flex-1 cursor-pointer items-center justify-start gap-2 font-montserrat">
           <Image
             src={copyrightSign}
             alt="copyright"
             width={20}
             height={20}
-            className="rounded-full m-0 "
+            className="m-0 rounded-full "
           />
           <p>Copyright. All rights reserved</p>
         </div>
-        <p className="font-montserrat cursor-pointer ">Terms & Conditions </p>
+        <p className="cursor-pointer font-montserrat ">Terms & Conditions </p>
       </div>
     </footer>
   );
